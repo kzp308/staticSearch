@@ -30,12 +30,15 @@
     </rules>
     
     <contexts>
-        <context match="blockquote" label="Quotations"/>
-        <context match="div[@class='l']"/>
-        <context match="span[@class='note'] | *[contains-token(@class,'sidenotes')]"
-            label="Notes"/>
-        <context match="cite" label="Citations"/>
-        <context match="p[contains-token(@class,'citation')]" label="Citations"/>
+        <!-- <context match="blockquote" label="Quotations"/>
+        <context match="div[@class='l']"/> -->
+        <context match="span[@class='person']"
+            label="People"/>
+        <context match="span[@class='item']"
+            label="Items"/>
+        <context match="span[@class='locations']"
+            label="Locations"/>
+        <context match="p[span]" label="Important-paragraphs"/>
     </contexts>
     
     <excludes>
